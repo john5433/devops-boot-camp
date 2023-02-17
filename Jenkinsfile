@@ -19,7 +19,7 @@ pipeline{
            	  sh 'mvn compile'
               sh 'mvn test'
        }
-}
+     }
 
       }
 
