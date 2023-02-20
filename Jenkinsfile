@@ -8,11 +8,14 @@ pipeline {
            }
        	  }
 
-             stage('Second-Stage') {
-                    steps {
-                           echo 'This is Second-stage'
-                    }
-              }
+             stage('Compiling and Running Test Cases') {
+         steps {
+              sh 'mvn clean'
+              sh 'mvn compile'
+              sh 'mvn test'
+       }
+   }
+
              stage('Third-Stage') {
                     steps {
                            echo 'This is Third-stage'
