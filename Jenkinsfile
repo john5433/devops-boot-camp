@@ -16,11 +16,12 @@ pipeline {
        }
    }
 
-             stage('Third-Stage') {
-                    steps {
-                           echo 'This is Third-stage'
-                    }
-              }
-        }
+             stage('Creating Package') {
+                 steps {
+           	   sh 'mvn package'
+       }
+     }
+
+      }
    }
 
