@@ -29,3 +29,4 @@ sh 'nohup java -jar ./target/springboot-bootcamp-0.0.1-SNAPSHOT.jar &'
 }
 }
 }
+}
