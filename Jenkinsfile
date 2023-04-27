@@ -23,8 +23,7 @@ sh 'mvn package'
 stage ('Deploying Application Using Ansible') {
 steps {
 
-sh 'export ANSIBLE_HOST_KEY_CHECKING=False && ansible-
-playbook --private-key=/home/ubuntu/.ssh/technotrainer-24th-apr-citi.pem -i
+sh 'export ANSIBLE_HOST_KEY_CHECKING=False && ansible-playbook --private-key=/home/ubuntu/.ssh/technotrainer-24th-apr-citi.pem -i
 
 host_inventory deploy-artifact.yml'
 
